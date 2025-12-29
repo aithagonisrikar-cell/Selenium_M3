@@ -1,10 +1,7 @@
 package GenericUtilities;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.Date;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ISuite;
@@ -18,8 +15,6 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-
-import BaseClassUtility.BaseClass;
 
 public class ListernersUtility implements ISuiteListener, ITestListener {
 	public static ExtentTest test;

@@ -17,7 +17,7 @@ import POMUtilities.OrgPompage;
 
 public class CreateOrgTest extends BaseClass {
 
-	@Test
+	@Test(groups = "smoke")
 	public void createOrgTest() throws IOException, InterruptedException {
 
 		// Creating instances

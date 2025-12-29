@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -27,7 +28,7 @@ import POMUtilities.OrgPompage;
 
 //Changes for git to eclipse
 
-//@Listeners(GenericUtilities.ListernersUtility.class)
+@Listeners(GenericUtilities.ListernersUtility.class)
 
 public class ContactScenariosTest extends BaseClass {
 
@@ -198,6 +199,8 @@ public class ContactScenariosTest extends BaseClass {
 		// Validate contact name
 		ContactInfoPompage coninfo = new ContactInfoPompage(driver);
 		String verifyconname = coninfo.getVerifyLastname();
+		
+		
 		// Using Hard Assert
 		Assert.assertEquals(verifyconname, conname, "Verified contact name failed");
 		UtilityObjectClass.getStest().log(Status.PASS, "Validate contact name Using Hard Assert");

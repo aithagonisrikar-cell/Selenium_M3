@@ -17,7 +17,7 @@ import POMUtilities.HomePompage;
 
 public class CreateContactTest extends BaseClass {
 
-	@Test
+	@Test(groups = "smoke")
 	public void createConTest() throws IOException, InterruptedException {
 
 		// Creating instances

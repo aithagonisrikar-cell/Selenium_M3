@@ -1,127 +1,260 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Suite Execution started -Adv report configuration]]>
+    </line>
     <line>
       <![CDATA[Get connection with the Database]]>
     </line>
+    <line>
+      <![CDATA[Configuration of parallel execution]]>
+    </line>
+    <line>
+      <![CDATA[Launch the browser]]>
+    </line>
+    <line>
+      <![CDATA[Login to the application]]>
+    </line>
+    <line>
+      <![CDATA[conWithOrgTest : Test Execution Started]]>
+    </line>
+    <line>
+      <![CDATA[conWithOrgTest : Test Execution Success]]>
+    </line>
+    <line>
+      <![CDATA[Logout from the application]]>
+    </line>
+    <line>
+      <![CDATA[Login to the application]]>
+    </line>
+    <line>
+      <![CDATA[conWithSuppDateTest : Test Execution Started]]>
+    </line>
+    <line>
+      <![CDATA[2025-12-26]]>
+    </line>
+    <line>
+      <![CDATA[2026-01-25]]>
+    </line>
+    <line>
+      <![CDATA[conWithSuppDateTest : Test Execution Success]]>
+    </line>
+    <line>
+      <![CDATA[Logout from the application]]>
+    </line>
+    <line>
+      <![CDATA[Quit the Browser]]>
+    </line>
+    <line>
+      <![CDATA[Launch the browser]]>
+    </line>
+    <line>
+      <![CDATA[Login to the application]]>
+    </line>
+    <line>
+      <![CDATA[OrgWithIndAndTypeTest : Test Execution Started]]>
+    </line>
+    <line>
+      <![CDATA[OrgWithIndAndTypeTest : Test Execution Success]]>
+    </line>
+    <line>
+      <![CDATA[Logout from the application]]>
+    </line>
+    <line>
+      <![CDATA[Login to the application]]>
+    </line>
+    <line>
+      <![CDATA[createOrgWithPhnoTest : Test Execution Started]]>
+    </line>
+    <line>
+      <![CDATA[createOrgWithPhnoTest : Test Execution Success]]>
+    </line>
+    <line>
+      <![CDATA[Logout from the application]]>
+    </line>
+    <line>
+      <![CDATA[Quit the Browser]]>
+    </line>
+    <line>
+      <![CDATA[Close Parallel Execution]]>
+    </line>
+    <line>
+      <![CDATA[Disconnect with the Database]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-12-24T11:22:56 IST" name="Default suite" finished-at="2025-12-24T11:22:56 IST" duration-ms="83">
+  <suite started-at="2025-12-26T13:27:28 IST" name="Suite" finished-at="2025-12-26T13:28:57 IST" duration-ms="88874">
     <groups>
+      <group name="reg">
+        <method signature="ContactScenariosTest.conWithOrgTest()[pri:0, instance:contactModule.ContactScenariosTest@385c9627]" name="conWithOrgTest" class="contactModule.ContactScenariosTest"/>
+        <method signature="ContactScenariosTest.conWithSuppDateTest()[pri:0, instance:contactModule.ContactScenariosTest@385c9627]" name="conWithSuppDateTest" class="contactModule.ContactScenariosTest"/>
+        <method signature="OrgScenariosTest.OrgWithIndAndTypeTest()[pri:0, instance:organizationModule.OrgScenariosTest@31190526]" name="OrgWithIndAndTypeTest" class="organizationModule.OrgScenariosTest"/>
+        <method signature="OrgScenariosTest.createOrgWithPhnoTest()[pri:0, instance:organizationModule.OrgScenariosTest@31190526]" name="createOrgWithPhnoTest" class="organizationModule.OrgScenariosTest"/>
+      </group> <!-- reg -->
     </groups>
-    <test started-at="2025-12-24T11:22:56 IST" name="Default test" finished-at="2025-12-24T11:22:56 IST" duration-ms="83">
-      <class name="contactModule.CreateContactTest">
-        <test-method is-config="true" signature="connectToDatabase()[pri:0, instance:contactModule.CreateContactTest@139982de]" started-at="2025-12-24T11:22:55 IST" name="connectToDatabase" finished-at="2025-12-24T11:22:56 IST" duration-ms="776" status="FAIL">
-          <exception class="java.sql.SQLSyntaxErrorException">
-            <message>
-              <![CDATA[Unknown database 'advproject']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.sql.SQLSyntaxErrorException: Unknown database 'advproject'
-at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
-at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
-at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
-at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
-at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
-at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
-at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
-at GenericUtilities.DataBaseUtility.connectToDatabase(DataBaseUtility.java:25)
-at BaseClassUtility.BaseClass.connectToDatabase(BaseClass.java:36)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.sql.SQLSyntaxErrorException -->
+    <test started-at="2025-12-26T13:27:28 IST" name="Test" finished-at="2025-12-26T13:28:57 IST" duration-ms="88874">
+      <class name="contactModule.ContactScenariosTest">
+        <test-method is-config="true" signature="connectToDatabase()[pri:0, instance:contactModule.ContactScenariosTest@385c9627]" started-at="2025-12-26T13:27:28 IST" name="connectToDatabase" finished-at="2025-12-26T13:27:28 IST" duration-ms="439" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Get connection with the Database]]>
             </line>
           </reporter-output>
         </test-method> <!-- connectToDatabase -->
-        <test-method is-config="true" signature="configParallelExe()[pri:0, instance:contactModule.CreateContactTest@139982de]" started-at="2025-12-24T11:22:56 IST" name="configParallelExe" finished-at="2025-12-24T11:22:56 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="configParallelExe()[pri:0, instance:contactModule.ContactScenariosTest@385c9627]" started-at="2025-12-26T13:27:28 IST" name="configParallelExe" finished-at="2025-12-26T13:27:28 IST" duration-ms="0" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Configuration of parallel execution]]>
+            </line>
           </reporter-output>
         </test-method> <!-- configParallelExe -->
-        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:contactModule.CreateContactTest@139982de]" started-at="2025-12-24T11:22:56 IST" name="launchTheBrowser" finished-at="2025-12-24T11:22:56 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:contactModule.ContactScenariosTest@385c9627]" started-at="2025-12-26T13:27:28 IST" name="launchTheBrowser" finished-at="2025-12-26T13:27:30 IST" duration-ms="1147" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Launch the browser]]>
+            </line>
           </reporter-output>
         </test-method> <!-- launchTheBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:contactModule.CreateContactTest@139982de]" started-at="2025-12-24T11:22:56 IST" name="login" finished-at="2025-12-24T11:22:56 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="login()[pri:0, instance:contactModule.ContactScenariosTest@385c9627]" started-at="2025-12-26T13:27:30 IST" name="login" finished-at="2025-12-26T13:27:31 IST" duration-ms="1014" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Login to the application]]>
+            </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="createConTest()[pri:0, instance:contactModule.CreateContactTest@139982de]" started-at="2025-12-24T11:22:56 IST" name="createConTest" finished-at="2025-12-24T11:22:56 IST" duration-ms="0" status="SKIP">
-          <exception class="java.sql.SQLSyntaxErrorException">
-            <message>
-              <![CDATA[Unknown database 'advproject']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.sql.SQLSyntaxErrorException: Unknown database 'advproject'
-at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
-at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
-at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
-at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
-at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
-at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
-at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
-at GenericUtilities.DataBaseUtility.connectToDatabase(DataBaseUtility.java:25)
-at BaseClassUtility.BaseClass.connectToDatabase(BaseClass.java:36)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.sql.SQLSyntaxErrorException -->
+        <test-method signature="conWithOrgTest()[pri:0, instance:contactModule.ContactScenariosTest@385c9627]" started-at="2025-12-26T13:27:31 IST" name="conWithOrgTest" finished-at="2025-12-26T13:27:58 IST" duration-ms="27848" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[conWithOrgTest : Test Execution Started]]>
+            </line>
+            <line>
+              <![CDATA[conWithOrgTest : Test Execution Success]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- createConTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:contactModule.CreateContactTest@139982de]" started-at="2025-12-24T11:22:56 IST" name="logout" finished-at="2025-12-24T11:22:56 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- conWithOrgTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:contactModule.ContactScenariosTest@385c9627]" started-at="2025-12-26T13:27:58 IST" name="logout" finished-at="2025-12-26T13:28:02 IST" duration-ms="3185" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Logout from the application]]>
+            </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="quitTheBrowser()[pri:0, instance:contactModule.CreateContactTest@139982de]" started-at="2025-12-24T11:22:56 IST" name="quitTheBrowser" finished-at="2025-12-24T11:22:56 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="login()[pri:0, instance:contactModule.ContactScenariosTest@385c9627]" started-at="2025-12-26T13:28:02 IST" name="login" finished-at="2025-12-26T13:28:02 IST" duration-ms="518" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Login to the application]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="conWithSuppDateTest()[pri:0, instance:contactModule.ContactScenariosTest@385c9627]" started-at="2025-12-26T13:28:02 IST" name="conWithSuppDateTest" finished-at="2025-12-26T13:28:16 IST" duration-ms="14131" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[conWithSuppDateTest : Test Execution Started]]>
+            </line>
+            <line>
+              <![CDATA[2025-12-26]]>
+            </line>
+            <line>
+              <![CDATA[2026-01-25]]>
+            </line>
+            <line>
+              <![CDATA[conWithSuppDateTest : Test Execution Success]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- conWithSuppDateTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:contactModule.ContactScenariosTest@385c9627]" started-at="2025-12-26T13:28:16 IST" name="logout" finished-at="2025-12-26T13:28:20 IST" duration-ms="3438" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logout from the application]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="quitTheBrowser()[pri:0, instance:contactModule.ContactScenariosTest@385c9627]" started-at="2025-12-26T13:28:20 IST" name="quitTheBrowser" finished-at="2025-12-26T13:28:20 IST" duration-ms="174" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Quit the Browser]]>
+            </line>
           </reporter-output>
         </test-method> <!-- quitTheBrowser -->
-        <test-method is-config="true" signature="closeParallelExe()[pri:0, instance:contactModule.CreateContactTest@139982de]" started-at="2025-12-24T11:22:56 IST" name="closeParallelExe" finished-at="2025-12-24T11:22:56 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="closeParallelExe()[pri:0, instance:contactModule.ContactScenariosTest@385c9627]" started-at="2025-12-26T13:28:57 IST" name="closeParallelExe" finished-at="2025-12-26T13:28:57 IST" duration-ms="0" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Close Parallel Execution]]>
+            </line>
           </reporter-output>
         </test-method> <!-- closeParallelExe -->
-        <test-method is-config="true" signature="disconnectWithDatabase()[pri:0, instance:contactModule.CreateContactTest@139982de]" started-at="2025-12-24T11:22:56 IST" name="disconnectWithDatabase" finished-at="2025-12-24T11:22:56 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="disconnectWithDatabase()[pri:0, instance:contactModule.ContactScenariosTest@385c9627]" started-at="2025-12-26T13:28:57 IST" name="disconnectWithDatabase" finished-at="2025-12-26T13:28:57 IST" duration-ms="3" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Disconnect with the Database]]>
+            </line>
           </reporter-output>
         </test-method> <!-- disconnectWithDatabase -->
-      </class> <!-- contactModule.CreateContactTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- contactModule.ContactScenariosTest -->
+      <class name="organizationModule.OrgScenariosTest">
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:organizationModule.OrgScenariosTest@31190526]" started-at="2025-12-26T13:28:20 IST" name="launchTheBrowser" finished-at="2025-12-26T13:28:21 IST" duration-ms="697" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Launch the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchTheBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:organizationModule.OrgScenariosTest@31190526]" started-at="2025-12-26T13:28:21 IST" name="login" finished-at="2025-12-26T13:28:22 IST" duration-ms="948" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login to the application]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="OrgWithIndAndTypeTest()[pri:0, instance:organizationModule.OrgScenariosTest@31190526]" started-at="2025-12-26T13:28:22 IST" name="OrgWithIndAndTypeTest" finished-at="2025-12-26T13:28:36 IST" duration-ms="14344" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[OrgWithIndAndTypeTest : Test Execution Started]]>
+            </line>
+            <line>
+              <![CDATA[OrgWithIndAndTypeTest : Test Execution Success]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- OrgWithIndAndTypeTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:organizationModule.OrgScenariosTest@31190526]" started-at="2025-12-26T13:28:36 IST" name="logout" finished-at="2025-12-26T13:28:39 IST" duration-ms="3131" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logout from the application]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:organizationModule.OrgScenariosTest@31190526]" started-at="2025-12-26T13:28:39 IST" name="login" finished-at="2025-12-26T13:28:41 IST" duration-ms="2405" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login to the application]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createOrgWithPhnoTest()[pri:0, instance:organizationModule.OrgScenariosTest@31190526]" started-at="2025-12-26T13:28:41 IST" name="createOrgWithPhnoTest" finished-at="2025-12-26T13:28:54 IST" duration-ms="12389" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[createOrgWithPhnoTest : Test Execution Started]]>
+            </line>
+            <line>
+              <![CDATA[createOrgWithPhnoTest : Test Execution Success]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createOrgWithPhnoTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:organizationModule.OrgScenariosTest@31190526]" started-at="2025-12-26T13:28:54 IST" name="logout" finished-at="2025-12-26T13:28:57 IST" duration-ms="3267" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logout from the application]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="quitTheBrowser()[pri:0, instance:organizationModule.OrgScenariosTest@31190526]" started-at="2025-12-26T13:28:57 IST" name="quitTheBrowser" finished-at="2025-12-26T13:28:57 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Quit the Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- quitTheBrowser -->
+      </class> <!-- organizationModule.OrgScenariosTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
